@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
+# Copyright (C) 2024 The hentaiOS Project and its Proprietors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -69,6 +69,9 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # Inherit from lewdboratory config
 $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
+
+# Inherit from animations config
+$(call inherit-product, vendor/hentai/config/animations.mk)
 
 # Inherit from apex config
 $(call inherit-product, vendor/hentai/config/apex.mk)
